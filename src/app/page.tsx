@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import img from '../assets/java.png'
+import event from '../assets/event-1.png'
 export default function Home() {
   return (
     <>
@@ -52,57 +53,157 @@ export default function Home() {
         {/* Course List  */}
         <section className="bg-cyan-blue mx-36">
           <h1 className="font-extrabold text-5xl">Explore Top Courses</h1>
-          {/* category Cards */}
-          <section className="grid grid-cols-3 gap-20 mt-20">
-            {/* each card */}
-            <div className='rounded-2xl bg-white shadow-xl'>
-              <Image
-                src={img}
-                alt="Picture of the author"
-                width="350"
-                height="300"
-              />
-              <div className='px-11 mt-12 mb-7'>
-                <h3 className='font-bold'>Java Programming</h3>
-                <p className='mb-10'>by Sakib hasan</p>
-                <p>⭐ 5 (270 reviews)</p>
-                <p>Beginner Friendly 4-6 Months</p>
-              </div>
-            </div>
-            <div className='rounded-2xl bg-white shadow-xl'>
-              <Image
-                src={img}
-                alt="Picture of the author"
-                width="350"
-                height="300"
-              />
-              <div className='px-11 mt-12 mb-7'>
-                <h3 className='font-bold'>Java Programming</h3>
-                <p className='mb-10'>by Sakib hasan</p>
-                <p>⭐ 5 (270 reviews)</p>
-                <p>Beginner Friendly 4-6 Months</p>
-              </div>
-            </div>
-            <div className='rounded-2xl bg-white shadow-xl'>
-              <Image
-                src={img}
-                alt="Picture of the author"
-                width="350"
-                height="300"
-              />
-              <div className='px-11 mt-12 mb-7'>
-                <h3 className='font-bold'>Java Programming</h3>
-                <p className='mb-10'>by Sakib hasan</p>
-                <p>⭐ 5 (270 reviews)</p>
-                <p>Beginner Friendly 4-6 Months</p>
-              </div>
-            </div>
-            {/* each card end */}
+          <div className='flex flex-col justify-center items-center'>
+            <div>
+              {/* category Cards */}
+              <section className="grid grid-cols-3 gap-20 mt-20">
+                {/* each card */}
+                <div className='rounded-2xl bg-white shadow-md'>
+                  <Image
+                    src={img}
+                    alt="Picture of the author"
+                    width="350"
+                    height="300"
+                  />
+                  <div className='px-11 mt-12 mb-7'>
+                    <h3 className='font-bold'>Java Programming</h3>
+                    <p className='mb-10'>by Sakib hasan</p>
+                    <p>⭐ 5 (270 reviews)</p>
+                    <p>Beginner Friendly 4-6 Months</p>
+                  </div>
+                </div>
+                <div className='rounded-2xl bg-white shadow-md'>
+                  <Image
+                    src={img}
+                    alt="Picture of the author"
+                    width="350"
+                    height="300"
+                  />
+                  <div className='px-11 mt-12 mb-7'>
+                    <h3 className='font-bold'>Java Programming</h3>
+                    <p className='mb-10'>by Sakib hasan</p>
+                    <p>⭐ 5 (270 reviews)</p>
+                    <p>Beginner Friendly 4-6 Months</p>
+                  </div>
+                </div>
+                <div className='rounded-2xl bg-white shadow-md'>
+                  <Image
+                    src={img}
+                    alt="Picture of the author"
+                    width="350"
+                    height="300"
+                  />
+                  <div className='px-11 mt-12 mb-7'>
+                    <h3 className='font-bold'>Java Programming</h3>
+                    <p className='mb-10'>by Sakib hasan</p>
+                    <p>⭐ 5 (270 reviews)</p>
+                    <p>Beginner Friendly 4-6 Months</p>
+                  </div>
+                </div>
+                {/* each card end */}
 
-          </section>
-          {/* category Cards End */}
+              </section>
+              {/* category Cards End */}
+            </div>
+            <button className='px-6 mt-20 mb-20 bg-orange text-white font-semibold py-2 rounded-md'>Explore More Courses</button>
+          </div>
         </section>
         {/* Course List End  */}
+
+        {/* upcoming events */}
+        <section className='mx-36 mb-36'>
+          <h1 className="font-extrabold text-5xl mt-32 mb-20">Upcoming Events</h1>
+          <div className='bg-cyan-blue h-96 border-4 flex justify-center items-center'>
+            <Image
+              src={event}
+              width='756'
+              height='384'
+              alt="Picture of the author"
+            />
+            <div className='text-center'>
+              <h1 className='font-extrabold text-4xl'>Long Island University Seminar</h1>
+              <p>MENTORS' / JUNE 12, 2023</p>
+              <p>Date: 18 June, Sunday Time: 3:30 PM Location: Mentors' Kalabagan Branch</p>
+              <button className='text-white bg-orange py-2 px-5 rounded-sm font-bold mt-9'>Read More</button>
+            </div>
+          </div>
+
+        </section>
+        {/* upcoming events End */}
+
+        <div className='h-56 bg-navy-blue rounded-bl-[100px]  flex justify-between items-center'>
+          <div className='mx-44 text-white flex justify-between'>
+            <div>
+              <p>Individual Learner</p>
+              <h1 className='font-bold'>Accelerate your career with job-rady digital skills</h1>
+            </div>
+            <p className='border-2 py-2 px-3'>Explore Courses</p>
+          </div>
+        </div>
+
+        {/* testimonials */}
+        <section className='mx-36 mb-32 bg-cyan-blue'>
+          <h1 className="font-extrabold text-5xl mt-32 mb-20 text-center">Testimonials</h1>
+          <section className='grid grid-cols-3 gap-52'>
+            <div className='flex flex-col justify-center items-center'>
+              <div className='bg-orange h-40 w-40 rounded-full mb-9' />
+              <h1 className='font-bold'>Nora Myers</h1>
+              <p className='text-center'>“Dataque has helped me
+                expand my knowledge through
+                serveral important courses
+                that are extremely impactful and
+                helpful for my career.”
+              </p>
+            </div>
+            <div className='flex flex-col justify-center items-center'>
+              <div className='bg-orange h-40 w-40 rounded-full mb-9' />
+              <h1 className='font-bold'>Nora Myers</h1>
+              <p className='text-center'>“Dataque has helped me
+                expand my knowledge through
+                serveral important courses
+                that are extremely impactful and
+                helpful for my career.”
+              </p>
+            </div>
+            <div className='flex flex-col justify-center items-center'>
+              <div className='bg-orange h-40 w-40 rounded-full mb-9' />
+              <h1 className='font-bold'>Nora Myers</h1>
+              <p className='text-center'>“Dataque has helped me
+                expand my knowledge through
+                serveral important courses
+                that are extremely impactful and
+                helpful for my career.”
+              </p>
+            </div>
+          </section>
+        </section>
+
+        {/* testimonials End*/}
+
+        {/* videos */}
+        <section className='mx-44 mb-32'>
+          <h1 className="font-extrabold text-5xl mt-32 mb-20 text-center">Videos</h1>
+          <section className='grid grid-cols-3 justify-items-center'>
+            <div>
+              <div className='w-60 h-60 border-4 border-orange'/>
+            </div>
+            <div>
+              <div className='w-60 h-60 border-4 border-orange'/>
+            </div>
+            <div>
+              <div className='w-60 h-60 border-4 border-orange'/>
+            </div>
+          </section>
+        </section>
+        {/* videos end */}
+
+        {/* Footer */}
+        <footer>
+          
+        </footer>
+        {/* Footer Ends */}
+
+
       </div>
     </>
   )
