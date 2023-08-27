@@ -1,8 +1,11 @@
+import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa";
+import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import Image from 'next/image'
 import logo from '../assets/Kepler-LOGO.png'
 import img from '../assets/java.png'
 import event from '../assets/event-1.png'
 import Link from 'next/link'
+
 export default function Home() {
   return (
     <>
@@ -142,23 +145,24 @@ export default function Home() {
         {/* upcoming events End */}
 
         <div className='h-56 bg-navy-blue rounded-bl-[100px]  flex justify-between items-center'>
-          <div className='mx-44 text-white flex justify-between'>
+          <div className='mx-44 w-full text-white flex justify-between items-center'>
             <div>
               <p>Individual Learner</p>
               <h1 className='font-bold'>Accelerate your career with job-rady digital skills</h1>
             </div>
-            <p className='border-2 py-2 px-3'>Explore Courses</p>
+            <p className='border-2 py-2 px-3'>Explore Courses
+            <HiOutlineArrowNarrowRight/></p>
           </div>
         </div>
 
         {/* testimonials */}
-        <section className='mb-32 bg-cyan-blue'>
+        <section className='bg-cyan-blue'>
           <div className='mx-36'>
-            <h1 className="font-extrabold text-5xl mt-32 mb-20 text-center">Testimonials</h1>
-            <section className='grid grid-cols-3 gap-52'>
+            <h1 className="font-extrabold text-5xl pt-32 mb-20 text-center">Testimonials</h1>
+            <section className='grid grid-cols-3 gap-52 pb-32'>
               <div className='flex flex-col justify-center items-center'>
                 <div className='bg-orange h-40 w-40 rounded-full mb-9' />
-                <h1 className='font-bold'>Nora Myers</h1>
+                <h1 className='font-bold text-xl mb-7'>Nora Myers</h1>
                 <p className='text-center'>“Dataque has helped me
                   expand my knowledge through
                   serveral important courses
@@ -168,7 +172,7 @@ export default function Home() {
               </div>
               <div className='flex flex-col justify-center items-center'>
                 <div className='bg-orange h-40 w-40 rounded-full mb-9' />
-                <h1 className='font-bold'>Nora Myers</h1>
+                <h1 className='font-bold text-xl mb-7'>Nora Myers</h1>
                 <p className='text-center'>“Dataque has helped me
                   expand my knowledge through
                   serveral important courses
@@ -178,7 +182,7 @@ export default function Home() {
               </div>
               <div className='flex flex-col justify-center items-center'>
                 <div className='bg-orange h-40 w-40 rounded-full mb-9' />
-                <h1 className='font-bold'>Nora Myers</h1>
+                <h1 className='font-bold text-xl mb-7'>Nora Myers</h1>
                 <p className='text-center'>“Dataque has helped me
                   expand my knowledge through
                   serveral important courses
@@ -194,7 +198,7 @@ export default function Home() {
 
         {/* videos */}
         <section className='mx-44 mb-32'>
-          <h1 className="font-extrabold text-5xl mt-32 mb-20 text-center">Videos</h1>
+          <h1 className="font-extrabold text-5xl mt-9 mb-20 text-center">Videos</h1>
           <section className='grid grid-cols-3 justify-items-center'>
             <div>
               <div className='w-60 h-60 border-4 border-orange' />
@@ -210,8 +214,66 @@ export default function Home() {
         {/* videos end */}
 
         {/* Footer */}
-        <footer>
-
+        <footer className="  bg-footer-color">
+          <div className="flex flex-row mx-36 py-4">
+            <div className=" basis-2/3 text-white">
+              <div className="flex flex-row py-6 m-4 px-6">
+                <div className="basis-1/3 p-2">
+                  Dataque Business
+                  <ul>
+                    <li className="text-xs pt-2">Teach on Kepler</li>
+                    <li className="text-xs pt-2">About Us</li>
+                    <li className="text-xs pt-2">Contact Us </li>
+                  </ul>
+                </div>
+                <div className="basis-1/3 p-2">
+                  Carrers
+                  <ul>
+                    <li className="text-xs pt-2">Blog </li>
+                    <li className="text-xs pt-2">Help and Support</li>
+                    <li className="text-xs pt-2">Investor </li>
+                  </ul>
+                </div>
+                <div className="basis-1/3 p-2">
+                  Terms
+                  <ul>
+                    <li className="text-xs pt-2">Privacy Policy </li>
+                    <li className="text-xs pt-2">Cookie Setting</li>
+                    <li className="text-xs pt-2">Accessibility Statement </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className=" basis-1/4 grid-cols-4 text-white pt-6">
+              <div className="pt-3">Newsletters</div>
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="py-2 px-7 my-2 text-footer-color w-full"
+              />
+              <button className=" bg-orange rounded font-medium text-white block my-2 px-5 py-1 uppercase">
+                Subscribe
+              </button>
+              <div className="flex my-4">
+                <div className="m-1">
+                  <FaFacebook size={32} />
+                </div>
+                <div className="m-1">
+                  <FaInstagram size={32} />
+                </div>
+                <div className="m-1">
+                  <FaTelegram size={32} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="border-t-2 border-white" />
+          <p className=" text-center text-white p-6">
+            &copy;{" "}
+            <span className="text-sm">
+              2023 Kepler Inc. All rights reserved.
+            </span>
+          </p>
         </footer>
         {/* Footer Ends */}
 
